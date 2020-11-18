@@ -25,7 +25,7 @@ class HTMLtable:
                                   HTMLtable.CELLSPANRIGHT: 0, 
                                   HTMLtable.CELLSPANDOWN:0} for col in range(cols)} for row in range(rows)}
         return None
-    def add_rows(self, nrows:int)->HTMLtable:
+    def add_rows(self, nrows:int):
         if not isinstance(nrows, int):
             raise TypeError(f'excpeted int, got {type(nrows).__repr__(nrows)} ')
         if nrows<=0:
@@ -36,7 +36,7 @@ class HTMLtable:
                                 HTMLtable.CELLSPANDOWN:0} for col in range(self.__cols)} for row in range(self.__rows, self.__rows+nrows)} )
         self.__rows += nrows
         return self
-    def add_columns(self, ncols:int)->HTMLtable:
+    def add_columns(self, ncols:int):
         if not isinstance(ncols, int):
             raise TypeError(f'excpeted int, got {type(ncols).__repr__(ncols)} ')
         if ncols<=0:
@@ -66,7 +66,7 @@ class HTMLtable:
         self.__caption=caption
         return self
 
-    def merge_cells(self, row_start, col_start, row_end=None, col_end=None)->HTMLtable:
+    def merge_cells(self, row_start, col_start, row_end=None, col_end=None):
         """
         Merge the cells into one span. Will fail if cells are already part of a span
         Enter first and last column, 0-indexed

@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='htmltable',
-    version='0.0.1',
+    version='0.0.2',
     description='html tables for jupyter notebooks',
     url='git@github.com/snowdd1/htmltable.git',
     author='Raoul',
