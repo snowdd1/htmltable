@@ -7,7 +7,7 @@ setup(
     url='git@github.com/snowdd1/htmltable.git',
     author='Raoul',
     author_email='snowdd1.theelk@xoxy.net',
-    license='unlicense',
+    license='MIT2.0',
     packages=['htmltable'],
     zip_safe=False
 )
